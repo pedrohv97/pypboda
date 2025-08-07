@@ -1,0 +1,16 @@
+# Archivos generados por macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Iconos de carpeta personalizados
+Icon?
+
+# Archivos de Spotlight
+.Spotlight-V100
+
+# Archivos de Thumbnails
+._*
+
+# Archivos de almacenamiento de Finder
+.fseventsd
