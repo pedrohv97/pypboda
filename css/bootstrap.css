@@ -2628,7 +2628,18 @@ a.btn.disabled, fieldset[disabled] a.btn {
   pointer-events: none;
 }
 
-.btn-default {
+..btn-primary {
+  background-color: #6B8E6E;
+  border-color: #2E5D3A;
+  color: #fff;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #355C7D;
+  border-color: #355C7D;
+  color: #fff;
+}default {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
