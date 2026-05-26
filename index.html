@@ -93,7 +93,7 @@
 							<div class="simply-countdown simply-countdown-one"></div>
 							<p>
 								<!--<a href="#" class="btn btn-default btn-sm">Guárdate esta fecha</a>-->
-								<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Patricia+%26+Pedro+Boda&dates=20260530T170000Z/20260531T020000Z&details=Celebración+de+la+boda+de+Patricia+y+Pedro+en+Hotel+SPA+Abadía+de+los+Templarios%2C+Salamanca%2C+España.&location=Hotel+SPA+Abadía+de+los+Templarios%2C+Salamanca%2C+España" target="_blank" class="btn btn-primary btn-sm" style="margin-left:10px;">
+								<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Patricia+%26+Pedro+Boda&ctz=Europe/Madrid&dates=20260530T190000/20260531T020000&details=Celebración+de+la+boda+de+Patricia+y+Pedro+en+Hotel+SPA+Abadía+de+los+Templarios%2C+Salamanca%2C+España.&location=Hotel+SPA+Abadía+de+los+Templarios%2C+Salamanca%2C+España" target="_blank" class="btn btn-primary btn-sm" style="margin-left:10px;">
 									Añadir a Google Calendar
 								</a>
 							</p>
@@ -435,21 +435,26 @@
 	<script src="js/main.js"></script>
 
 	<script>
-	// Fecha objetivo: 30 de mayo de 2026, 19:00 hora local
+	// Fecha objetivo: 30 de mayo de 2026, 19:00 hora local en España
 	var d = new Date(2026, 4, 30, 19, 0, 0); // Mes 4 = mayo (0-indexed)
 
     // default example
     simplyCountdown('.simply-countdown-one', {
         year: d.getFullYear(),
         month: d.getMonth() + 1,
-        day: d.getDate()
+        day: d.getDate(),
+        hours: d.getHours(),
+        minutes: d.getMinutes(),
+        enableUtc: false
     });
 
-    //jQuery example
+    // jQuery example
     $('#simply-countdown-losange').simplyCountdown({
         year: d.getFullYear(),
         month: d.getMonth() + 1,
         day: d.getDate(),
+        hours: d.getHours(),
+        minutes: d.getMinutes(),
         enableUtc: false
     });
 </script>
